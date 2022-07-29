@@ -7,6 +7,7 @@ using LojasIntegrada.Challenge.Domain.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,6 +30,10 @@ namespace LojasIntegrada.Challenge.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMemoryCache();
+
+            services.AddDbContext<AppContexto>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            });
 
             services.AddSwaggerGen(s =>
             s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

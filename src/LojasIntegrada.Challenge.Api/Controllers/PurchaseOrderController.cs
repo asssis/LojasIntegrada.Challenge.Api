@@ -35,6 +35,13 @@ namespace LojasIntegrada.Challenge.Api.Controllers
             var user = await userService.GetUser(User.Identity.Name);
             await purchaseOrderService.AddItemPurchaseOrder(productDto, user);
         }
+        [HttpPost("RemoveItemPurchaseOrder")]
+        [Authorize]
+        public async Task RemoveItemPurchaseOrder(ItensPurchaseOrderDto itemPurchaseOrderDto)
+        {
+            var user = await userService.GetUser(User.Identity.Name);
+            await purchaseOrderService.RemoveItemPurchaseOrder(itemPurchaseOrderDto, user);
+        }
         [HttpPost("AbandonarPurchaseOrder")]
         [Authorize]
         public async Task AbandonarPurchaseOrder()

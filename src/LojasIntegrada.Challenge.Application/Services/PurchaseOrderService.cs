@@ -37,6 +37,13 @@ namespace LojasIntegrada.Challenge.Application.Services
             await purchaseOrderRepository.AddItemPurchaseOrder(itensPurchaseOrder, userMap);
         }
 
+
+        public async Task RemoveItemPurchaseOrder(ItensPurchaseOrderDto itemPurchaseOrderDto, UserDto userDto)
+        {
+            var userMap = mapper.Map<User>(userDto);
+            var itemPurchaseOrderMap = mapper.Map<ItensPurchaseOrder>(itemPurchaseOrderDto);
+            await purchaseOrderRepository.RemoveItemPurchaseOrder(userMap, itemPurchaseOrderMap);
+        }
         public async Task AbandonarPurchaseOrder(UserDto userDto)
         {
             var userMap = mapper.Map<User>(userDto);
