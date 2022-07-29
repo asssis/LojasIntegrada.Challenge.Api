@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bmeRz1oUanInEr108TJSfh4kjnAJvdF1hItTnqjchI77ufD+ATYtQWRnq9x8NX/iDksfIpMokFOvaXzasdLD9g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\asjus\\projetos\\LojasIntegrada\\src\\LojasIntegrada.Challenge.Domain\\LojasIntegrada.Challenge.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\asjus\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\asjus\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
