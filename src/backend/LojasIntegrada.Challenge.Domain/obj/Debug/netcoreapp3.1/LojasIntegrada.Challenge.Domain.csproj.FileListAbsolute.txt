@@ -33,3 +33,4 @@ G:\Projetos\LojasIntegrada\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug
 G:\Projetos\LojasIntegrada\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.csproj.CoreCompileInputs.cache
 G:\Projetos\LojasIntegrada\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.dll
 G:\Projetos\LojasIntegrada\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.pdb
+G:\Projetos\LojasIntegrada\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.csproj.AssemblyReference.cache
