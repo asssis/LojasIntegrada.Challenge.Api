@@ -1,32 +1,33 @@
 version: '3.3'
 services:
-  db_mssql:
+  db_sql:
     image: mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04
-    container_name: db_mssql
+    container_name: db_sql
     ports:
       - "1433:1433"
     environment:
       SA_PASSWORD: "mypassword@@aabbcc123"
       ACCEPT_EULA: "Y"
 
-  web_develop:
+  api_backend:
     depends_on:
-      - db_mssql
+      - db_sql
     image: "mcr.microsoft.com/dotnet/sdk:3.1"
-    container_name: web_develop
+    container_name: api_backend
     environment:
       PATH: "$PATH:/root/.dotnet/tools"
     volumes:
-      - ./src:/app 
+      - ./src/backend:/app
+    command: cd /app
     command: dotnet tool install --global dotnet-ef --version 3.1
-    command: dotnet restore /app/Avanade.Challenge.Web
-    command: dotnet build /app/Avanade.Challenge.Web
-    command: dotnet ef database update --project /app/Avanade.Challenge.Infra.Database
-    command: dotnet run --project /app/Avanade.Challenge.Web run --urls "http://0.0.0.0:8080"   
+    command: dotnet restore /app/LojasIntegrada.Challenge.Api
+    command: dotnet build /app/LojasIntegrada.Challenge.Api
+    command: dotnet ef database update --project /app/LojasIntegrada.Challenge.DataBase
+    command: dotnet run --project /app/LojasIntegrada.Challenge.Api run --urls "http://0.0.0.0:8080"   
     ports:
-      - "80:8080"
+      - "5000:8080"
     links:
-      - "db_mssql:database"
+      - "db_sql:database"
 
 volumes:
   db_data: {} 
