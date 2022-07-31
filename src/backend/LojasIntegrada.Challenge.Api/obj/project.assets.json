@@ -592,6 +592,22 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Design/3.1.25": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.25"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
+        },
+        "build": {
+          "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/3.1.25": {
         "type": "package",
         "dependencies": {
@@ -615,6 +631,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/3.1.25": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "3.1.25"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
@@ -3622,6 +3650,22 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Design/3.1.25": {
+      "sha512": "Bpo1i2Dj4eE57eLMnmT8sPe2EEwF2wCSeFhdsssaNXF3Cx6/7XuPZLlmvsDikyC+gO9m9YwEB4VZIh/2noBZbg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/3.1.25",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/net461/Microsoft.EntityFrameworkCore.Design.props",
+        "build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.3.1.25.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.Relational/3.1.25": {
       "sha512": "wpoMgKgljoafr5ublMeewqR1Dg7zhbqT2S9vQ6BPvQwJzZR2MT5YCkNx1ypCn9dY3G1I05MimKSkMN5+iBETRQ==",
       "type": "package",
@@ -3648,6 +3692,30 @@
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.3.1.25.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/3.1.25": {
+      "sha512": "GlynMdJPCfLTTZA24gaPeaDOJm/FGQA9TovXQ1xdzUorP6GYtAymGbfMTGLsdQX8PMwT13LnaH/O6EfV6UA0Xw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/3.1.25",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/_._",
+        "microsoft.entityframeworkcore.tools.3.1.25.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net461/any/ef.exe",
+        "tools/net461/win-x86/ef.exe",
+        "tools/netcoreapp2.0/any/ef.dll",
+        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
@@ -9287,6 +9355,9 @@
       "LojasIntegrada.Challenge.DataBase >= 1.0.0",
       "Microsoft.AspNetCore.Authentication >= 2.2.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.27",
+      "Microsoft.EntityFrameworkCore >= 3.1.26",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.25",
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.25",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
       "Swashbuckle.AspNetCore >= 6.3.1",
       "Swashbuckle.AspNetCore.Swagger >= 6.3.1",
@@ -9294,37 +9365,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asjus\\.nuget\\packages\\": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.Api\\LojasIntegrada.Challenge.Api.csproj",
+      "projectUniqueName": "/app/LojasIntegrada.Challenge.Api/LojasIntegrada.Challenge.Api.csproj",
       "projectName": "LojasIntegrada.Challenge.Api",
-      "projectPath": "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.Api\\LojasIntegrada.Challenge.Api.csproj",
-      "packagesPath": "C:\\Users\\asjus\\.nuget\\packages\\",
-      "outputPath": "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.Api\\obj\\",
+      "projectPath": "/app/LojasIntegrada.Challenge.Api/LojasIntegrada.Challenge.Api.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/app/LojasIntegrada.Challenge.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\asjus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.Application\\LojasIntegrada.Challenge.Application.csproj": {
-              "projectPath": "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.Application\\LojasIntegrada.Challenge.Application.csproj"
+            "/app/LojasIntegrada.Challenge.Application/LojasIntegrada.Challenge.Application.csproj": {
+              "projectPath": "/app/LojasIntegrada.Challenge.Application/LojasIntegrada.Challenge.Application.csproj"
             },
-            "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.DataBase\\LojasIntegrada.Challenge.DataBase.csproj": {
-              "projectPath": "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.DataBase\\LojasIntegrada.Challenge.DataBase.csproj"
+            "/app/LojasIntegrada.Challenge.DataBase/LojasIntegrada.Challenge.DataBase.csproj": {
+              "projectPath": "/app/LojasIntegrada.Challenge.DataBase/LojasIntegrada.Challenge.DataBase.csproj"
             }
           }
         }
@@ -9337,7 +9405,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "AutoMapper": {
             "target": "Package",
@@ -9350,6 +9417,20 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[3.1.27, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[3.1.26, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[3.1.25, )"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.1.25, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
@@ -9378,12 +9459,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.18, 3.1.18]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -9392,7 +9467,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.421/RuntimeIdentifierGraph.json"
       }
     }
   }

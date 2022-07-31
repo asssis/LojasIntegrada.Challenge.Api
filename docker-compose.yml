@@ -6,7 +6,7 @@ services:
     ports:
       - "1433:1433"
     environment:
-      SA_PASSWORD: "mypassword@@aabbcc123"
+      SA_PASSWORD: "aaabbbccc1234"
       ACCEPT_EULA: "Y"
 
   api_backend:
@@ -17,12 +17,12 @@ services:
     environment:
       PATH: "$PATH:/root/.dotnet/tools"
     volumes:
-      - ./src/backend:/app
-    command: cd /app
-    command: dotnet tool install --global dotnet-ef --version 3.1
+      - ./src/backend:/app 
     command: dotnet restore /app/LojasIntegrada.Challenge.Api
     command: dotnet build /app/LojasIntegrada.Challenge.Api
-    command: dotnet ef database update --project /app/LojasIntegrada.Challenge.DataBase
+    command: chmod +777 /app/databaseupdate.sh
+    command: cd /app
+    command: /bin/bash ./databaseupdate.sh
     command: dotnet run --project /app/LojasIntegrada.Challenge.Api run --urls "http://0.0.0.0:8080"   
     ports:
       - "5000:8080"

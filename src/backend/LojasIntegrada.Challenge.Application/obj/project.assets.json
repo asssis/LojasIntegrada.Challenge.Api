@@ -5721,37 +5721,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asjus\\.nuget\\packages\\": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.Application\\LojasIntegrada.Challenge.Application.csproj",
+      "projectUniqueName": "/app/LojasIntegrada.Challenge.Application/LojasIntegrada.Challenge.Application.csproj",
       "projectName": "LojasIntegrada.Challenge.Application",
-      "projectPath": "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.Application\\LojasIntegrada.Challenge.Application.csproj",
-      "packagesPath": "C:\\Users\\asjus\\.nuget\\packages\\",
-      "outputPath": "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.Application\\obj\\",
+      "projectPath": "/app/LojasIntegrada.Challenge.Application/LojasIntegrada.Challenge.Application.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/app/LojasIntegrada.Challenge.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\asjus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.DataBase\\LojasIntegrada.Challenge.DataBase.csproj": {
-              "projectPath": "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.DataBase\\LojasIntegrada.Challenge.DataBase.csproj"
+            "/app/LojasIntegrada.Challenge.DataBase/LojasIntegrada.Challenge.DataBase.csproj": {
+              "projectPath": "/app/LojasIntegrada.Challenge.DataBase/LojasIntegrada.Challenge.DataBase.csproj"
             },
-            "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.Domain\\LojasIntegrada.Challenge.Domain.csproj": {
-              "projectPath": "G:\\Projetos\\LojasIntegrada\\src\\backend\\LojasIntegrada.Challenge.Domain\\LojasIntegrada.Challenge.Domain.csproj"
+            "/app/LojasIntegrada.Challenge.Domain/LojasIntegrada.Challenge.Domain.csproj": {
+              "projectPath": "/app/LojasIntegrada.Challenge.Domain/LojasIntegrada.Challenge.Domain.csproj"
             }
           }
         }
@@ -5764,7 +5761,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "AutoMapper": {
             "target": "Package",
@@ -5786,7 +5782,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.421/RuntimeIdentifierGraph.json"
       }
     }
   }

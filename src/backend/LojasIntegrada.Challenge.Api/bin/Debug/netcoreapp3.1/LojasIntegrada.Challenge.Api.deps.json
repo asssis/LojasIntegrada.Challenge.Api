@@ -8,14 +8,7 @@
       "TRACE",
       "DEBUG",
       "NETCOREAPP",
-      "NETCOREAPP3_1",
-      "NETCOREAPP1_0_OR_GREATER",
-      "NETCOREAPP1_1_OR_GREATER",
-      "NETCOREAPP2_0_OR_GREATER",
-      "NETCOREAPP2_1_OR_GREATER",
-      "NETCOREAPP2_2_OR_GREATER",
-      "NETCOREAPP3_0_OR_GREATER",
-      "NETCOREAPP3_1_OR_GREATER"
+      "NETCOREAPP3_1"
     ],
     "languageVersion": "8.0",
     "platform": "",
@@ -36,6 +29,9 @@
           "LojasIntegrada.Challenge.DataBase": "1.0.0",
           "Microsoft.AspNetCore.Authentication": "2.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.27",
+          "Microsoft.EntityFrameworkCore": "3.1.26",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.25",
+          "Microsoft.EntityFrameworkCore.Tools": "3.1.25",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.5",
           "Swashbuckle.AspNetCore": "6.3.1",
           "Swashbuckle.AspNetCore.Swagger": "6.3.1",
@@ -799,6 +795,18 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/3.1.26": {},
+      "Microsoft.EntityFrameworkCore.Design/3.1.25": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.25"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {
+            "assemblyVersion": "3.1.25.0",
+            "fileVersion": "3.100.2522.21812"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/3.1.25": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.26"
@@ -826,6 +834,11 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/3.1.25": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "3.1.25"
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
@@ -1380,7 +1393,7 @@
           "runtimes/win-arm64/native/sni.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "4.6.25512.1"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1389,7 +1402,7 @@
           "runtimes/win-x64/native/sni.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "4.6.25512.1"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1398,7 +1411,7 @@
           "runtimes/win-x86/native/sni.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "4.6.25512.1"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -4283,6 +4296,13 @@
       "path": "microsoft.entityframeworkcore.analyzers/3.1.26",
       "hashPath": "microsoft.entityframeworkcore.analyzers.3.1.26.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Design/3.1.25": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bpo1i2Dj4eE57eLMnmT8sPe2EEwF2wCSeFhdsssaNXF3Cx6/7XuPZLlmvsDikyC+gO9m9YwEB4VZIh/2noBZbg==",
+      "path": "microsoft.entityframeworkcore.design/3.1.25",
+      "hashPath": "microsoft.entityframeworkcore.design.3.1.25.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.Relational/3.1.25": {
       "type": "package",
       "serviceable": true,
@@ -4296,6 +4316,13 @@
       "sha512": "sha512-WSZBuDW8KNemgC0XMDAq1rEIzDvW/BMDr7t+iYAZhNIDpRD3KJGQsaO5rGtW+E6hjbX6NTni7pREsBnIJfDXIA==",
       "path": "microsoft.entityframeworkcore.sqlserver/3.1.25",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.3.1.25.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Tools/3.1.25": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GlynMdJPCfLTTZA24gaPeaDOJm/FGQA9TovXQ1xdzUorP6GYtAymGbfMTGLsdQX8PMwT13LnaH/O6EfV6UA0Xw==",
+      "path": "microsoft.entityframeworkcore.tools/3.1.25",
+      "hashPath": "microsoft.entityframeworkcore.tools.3.1.25.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",
