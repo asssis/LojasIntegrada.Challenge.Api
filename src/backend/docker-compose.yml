@@ -1,0 +1,38 @@
+version: '3.3'
+services:
+    db_sql:
+      image: mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04
+      container_name: db_sql
+      ports:
+        - "1434:1433"
+      environment:
+        SA_PASSWORD: "aaabbbccc1234"
+        ACCEPT_EULA: "Y"
+  
+    api_backend:
+      depends_on:
+        - db_sql
+      image: "mcr.microsoft.com/dotnet/sdk:3.1"
+      container_name: api_backend
+      environment:
+        PATH: "$PATH:/root/.dotnet/tools"
+      volumes:
+        - ./src/backend:/app 
+      command: dotnet restore /app/LojasIntegrada.Challenge.Api
+      command: dotnet build /app/LojasIntegrada.Challenge.Api 
+      command: dotnet run --project /app/LojasIntegrada.Challenge.Api run --urls "http://0.0.0.0:8080"   
+      ports:
+        - "5000:8080"
+      links:
+        - "db_sql:database"
+  web_develop:
+    image: "nginx"
+    container_name: web_develop
+    volumes:
+      - ./src/frontend:/app
+      - ./src/frontend/conf.d:/etc/nginx/conf.d/
+    ports:
+      - "5001:80"
+
+volumes:
+  db_data: {}
