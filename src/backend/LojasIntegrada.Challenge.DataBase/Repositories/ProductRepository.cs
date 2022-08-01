@@ -17,6 +17,10 @@ namespace LojasIntegrada.Challenge.DataBase.Repositories
             appContexto = _appContexto;
         }
 
+        public ProductRepository()
+        {
+        }
+
         public async Task Delete(int id)
         {
             var entity = await appContexto.Products.FirstOrDefaultAsync(c => c.Id == id);

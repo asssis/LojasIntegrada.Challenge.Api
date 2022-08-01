@@ -34,3 +34,12 @@ G:\Projetos\LojasIntegrada\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug
 G:\Projetos\LojasIntegrada\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.dll
 G:\Projetos\LojasIntegrada\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.pdb
 G:\Projetos\LojasIntegrada\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.csproj.AssemblyReference.cache
+G:\Projetos\backup\LojasIntegrada.Challenge.Api\src\backend\LojasIntegrada.Challenge.Domain\bin\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.deps.json
+G:\Projetos\backup\LojasIntegrada.Challenge.Api\src\backend\LojasIntegrada.Challenge.Domain\bin\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.dll
+G:\Projetos\backup\LojasIntegrada.Challenge.Api\src\backend\LojasIntegrada.Challenge.Domain\bin\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.pdb
+G:\Projetos\backup\LojasIntegrada.Challenge.Api\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.csproj.AssemblyReference.cache
+G:\Projetos\backup\LojasIntegrada.Challenge.Api\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.AssemblyInfoInputs.cache
+G:\Projetos\backup\LojasIntegrada.Challenge.Api\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.AssemblyInfo.cs
+G:\Projetos\backup\LojasIntegrada.Challenge.Api\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.csproj.CoreCompileInputs.cache
+G:\Projetos\backup\LojasIntegrada.Challenge.Api\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.dll
+G:\Projetos\backup\LojasIntegrada.Challenge.Api\src\backend\LojasIntegrada.Challenge.Domain\obj\Debug\netcoreapp3.1\LojasIntegrada.Challenge.Domain.pdb
