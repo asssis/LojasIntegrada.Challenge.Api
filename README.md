@@ -14,14 +14,16 @@ Antes de iniciar verifique se o software necessários estão instalados e as por
 * 5001 => Porta do FRONTEND
 * 1434 => Porta do BANCO DE DADOS
 
-* Esse projeto possui o docker compose para facilitar a seu deploy
+Esse projeto possui o docker compose para facilitar a seu deploy
 
 `docker-compose up`
 
-* Para criar as migrations do projeto no banco rodar os comandos abaixo
+Para criar as migrations do projeto no banco rodar os comandos abaixo
 
 `docker container exec api_backend dotnet tool install --global dotnet-ef --version 3.1`
 
 `docker container exec api_backend dotnet-ef database update --project /app/LojasIntegrada.Challenge.DataBase`
 
-* Teste no Browse a API
+Teste no Browse a API
+
+![ArrayAllocation](https://raw.githubusercontent.com/asssis/LojasIntegrada.Challenge.Api/tree/main/docs/imagens/Imagem API.png?raw=true) 
