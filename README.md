@@ -25,9 +25,7 @@ Para criar as migrations do projeto no banco rodar os comandos abaixo
 `docker container exec api_backend dotnet-ef database update --project /app/LojasIntegrada.Challenge.DataBase`
 
 Teste no Browse a API
-
-![ArrayAllocation](https://github.com/asssis/LojasIntegrada.Challenge.Api/blob/main/docs/imagens/Imagem%20API.png?raw=true) 
+ 
 ![alt text](https://github.com/asssis/LojasIntegrada.Challenge.Api/blob/main/docs/imagens/Imagem%20API.png?raw=true)
 
-
-https://github.com/asssis/LojasIntegrada.Challenge.Api/blob/main/docs/imagens/Imagem%20API.png?raw=true
+ 
