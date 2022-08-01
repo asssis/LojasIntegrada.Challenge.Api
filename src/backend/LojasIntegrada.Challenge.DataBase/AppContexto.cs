@@ -18,7 +18,7 @@ namespace LojasIntegrada.Challenge.DataBase
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source='localhost,1433';User Id=sa;Password=aaabbcc1234;Initial Catalog=LojasIntegrada;");
+            optionsBuilder.UseSqlServer(@"Data Source='sql_lojasintegradas,1433';User Id=sa;Password=aaabbbccc1234@@asdfas123;Initial Catalog=LojasIntegrada;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
