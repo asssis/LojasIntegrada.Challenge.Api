@@ -26,5 +26,8 @@ Para criar as migrations do projeto no banco rodar os comandos abaixo
 
 Teste no Browse a API
 
-![ArrayAllocation](https://github.com//asssis/LojasIntegrada.Challenge.Api/tree/main/docs/imagens/Imagem API.png?raw=true) 
-![alt text](https://github.com//asssis/LojasIntegrada.Challenge.Api/tree/main/docs/imagens/Imagem API.png)
+![ArrayAllocation](https://github.com/asssis/LojasIntegrada.Challenge.Api/blob/main/docs/imagens/Imagem%20API.png?raw=true) 
+![alt text](https://github.com/asssis/LojasIntegrada.Challenge.Api/blob/main/docs/imagens/Imagem%20API.png?raw=true)
+
+
+https://github.com/asssis/LojasIntegrada.Challenge.Api/blob/main/docs/imagens/Imagem%20API.png?raw=true
