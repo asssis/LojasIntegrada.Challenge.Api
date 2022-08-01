@@ -38,6 +38,9 @@ Teste no Browse a API Acessando http://localhost:5001
  
 ![alt text](https://github.com/asssis/LojasIntegrada.Challenge.Api/blob/main/docs/imagens/Imagem%20FRONTEND.png?raw=true)
 
+Alguns Testes com xUnit.
+
+![alt text](https://github.com/asssis/LojasIntegrada.Challenge.Api/blob/main/docs/imagens/Testes.png?raw=true)
 
 
  
