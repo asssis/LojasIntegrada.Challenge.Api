@@ -1,5 +1,10 @@
 # LojasIntegrada.Challenge.Api
 
+## Esse projeto foi hospedado no azure.
+
+* API => http://teste.eastus.cloudapp.azure.com:5000/
+* FRONTEND => http://teste.eastus.cloudapp.azure.com:5001/
+
 ## Rodando o Projeto
 
 ### Requisitos
